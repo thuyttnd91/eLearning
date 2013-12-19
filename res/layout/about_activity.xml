@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:id="@+id/layoutClose"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:text="@string/about_title" />
+    <TextView 
+        android:id="@+id/tvExit"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:clickable="true"
+        android:background="@drawable/purple_background"
+        android:textColor="@android:color/white"
+        android:text="X"
+        android:textSize="30sp"/>
+    </RelativeLayout>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_launcher" 
+    android:layout_gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/layoutClose"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"/>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView1"
+    android:layout_gravity="center_horizontal"
+     android:layout_centerHorizontal="true"
+    android:text="@string/app_name" 
+    android:textStyle="bold"
+    android:textColor="@android:color/black"/>
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView2"
+    android:layout_gravity="center_horizontal"
+     android:layout_centerHorizontal="true"
+    android:text="@string/app_ver" 
+    android:textColor="@android:color/black"/>
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_marginTop="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView3"
+    android:text="@string/about_org_des" 
+    android:textColor="@android:color/black"/>
+
+<TextView
+    android:id="@+id/textView5"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView4"
+    android:text="@string/about_website" 
+    android:textColor="@android:color/black"/>
+
+<TextView
+    android:id="@+id/tvViewDes"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView5"
+    android:onClick="onClick"
+    android:text="@string/about_app_des" 
+    android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvViewDes"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/yellow_background"
+        android:textSize="17sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/about_ok" 
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

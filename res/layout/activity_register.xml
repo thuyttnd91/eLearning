@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.eas.elearning">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#EDC97A"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/purple_background"
+            android:onClick="onClickBack"
+            android:src="@drawable/icon_back" />
+        <TextView 
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_account"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_gray"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingLeft="10dp" 
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<LinearLayout 
+			    android:id="@+id/layoutInfo"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    
+			    >
+			    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_account"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/bb"
+                    android:textColor="#f53030" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/eUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#C0C0C0"
+                android:hint="Enter Username"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/ePass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#C0C0C0"
+                android:hint="Enter Password"
+               android:password="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/eEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#C0C0C0"
+                android:hint="Enter Email"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#C0C0C0" />
+			</LinearLayout>
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/p_info_account"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/eFullname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#C0C0C0"
+                android:hint="Enter Fullname"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="7" >
+
+                <EditText
+                    android:id="@+id/eDay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="#C0C0C0"
+                    android:hint="Date"
+                    android:paddingBottom="5dp"
+                    android:maxLength="2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    android:paddingTop="5dp"
+                    android:focusable="false"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/eMonth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="#C0C0C0"
+                    android:hint="Month"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:focusable="false"
+                    android:paddingTop="5dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/eYear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:background="#C0C0C0"
+                    android:hint="Year"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                   	android:maxLength="4"
+                    android:inputType="number"
+                    android:focusable="false"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#C0C0C0"
+                    android:onClick="onClickBirthday"
+                    android:gravity="center" >
+
+                    <ImageButton
+                        android:id="@+id/imgCalenda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:background="@drawable/icon_calenda" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn khu vực: "
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    />
+                 <org.holoeverywhere.widget.Spinner
+                    android:id="@+id/spArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </org.holoeverywhere.widget.Spinner>
+            </LinearLayout>
+            
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="@string/school"
+                    android:textColor="@android:color/black" />
+
+                <org.holoeverywhere.widget.Spinner
+                    android:id="@+id/spSchool"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </org.holoeverywhere.widget.Spinner>
+            </LinearLayout>
+
+            
+            
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/gender"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@android:color/black" />
+
+                    <org.holoeverywhere.widget.Switch
+                        android:id="@+id/swGender"
+                        style="?switchStyleOld"
+                        android:layout_width="100dp"
+                        app:textOn="Nam"
+                        app:textOff="Nữ"
+                        app:toggleWhenClick="true"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" 
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/class_student"
+                        android:textColor="@android:color/black" />
+
+                    <org.holoeverywhere.widget.Spinner
+                        android:id="@+id/spClass"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" >
+                    </org.holoeverywhere.widget.Spinner>
+                </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/yellow_background"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="XÁC NHẬN"
+                android:onClick="onClickAccept"
+                android:textColor="@color/dark_gray" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

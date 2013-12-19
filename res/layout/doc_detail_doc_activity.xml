@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <!-- <android.support.v4.view.ViewPager
+                android:id="@+id/viewpagerSlide"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" /> -->
+                 
+   <LinearLayout 
+       android:id="@+id/layout_header"
+       android:layout_width="fill_parent"
+       android:layout_height="0dp"
+       android:layout_weight="8.8"
+       android:gravity="center"
+       >
+       <ImageView 
+                    android:id="@+id/imgPage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    />
+   </LinearLayout>
+                
+     <RelativeLayout 
+         android:id="@+id/layout_footer"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:visibility="gone"
+         android:layout_weight="1.2"
+         android:background="@color/black"
+         >
+         <TextView
+                android:id="@+id/tvComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+               />
+         <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnCommentPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvComment"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_comment" />
+          <TextView
+                android:id="@+id/tvDownload"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btnComment"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="324"
+                android:textColor="@color/white"
+               />
+         <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnDownload"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvDownload"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_download" />
+          <TextView
+                android:id="@+id/tvView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/btnDownload"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="1024"
+                android:textColor="@color/white"
+               />
+         <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnView"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/tvView"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_view" />
+         <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:visibility="invisible"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:layout_toLeftOf="@+id/btnShare"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_favorite" />
+         <org.holoeverywhere.widget.ImageButton
+                android:id="@id/btnShare"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_share" />
+     </RelativeLayout>
+</LinearLayout>

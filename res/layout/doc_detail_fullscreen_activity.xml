@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+          <android.support.v4.view.ViewPager
+                android:id="@+id/viewpagerSlide"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" /> -->
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:gravity="center" >
+
+        <com.eas.elearning.customview.ZoomableImageView
+            android:id="@+id/imgPage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+   <RelativeLayout
+        android:id="@+id/layoutControl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:background="@color/black"
+        android:layout_weight="1"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/btnDownload"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue_background"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_download" />
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/btnFavorite"
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_toRightOf="@+id/btnDownload"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue_background"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_favorite" />
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/btnComment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btnDownload"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue_background"
+            android:onClick="onClick"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_comment" />
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/btnShare"
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/btnDownload"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue_background"
+            android:onClick="ShareDocument"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_share" />
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/btnFullScr"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/blue_background"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_normalscreen" />
+
+        <org.holoeverywhere.widget.TextView
+            android:id="@+id/tvPageIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnFullScr"
+            android:textStyle="bold"
+            android:textSize="15sp" />  
+            
+        <org.holoeverywhere.widget.TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnComment"
+            android:singleLine="true"
+            android:maxLength="10" />  
+
+    </RelativeLayout>
+
+</LinearLayout>

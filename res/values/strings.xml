@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">eLearning</string>
+    <string name="feedback_title">PHẢN HỒI</string>
+    <string name="feedback_hint">Nội dung góp ý</string>
+    <string name="feedback_send_btn_text">GỬI</string>
+    <string name="about_title">GIỚI THIỆU</string>
+    <string name="about_ok">OK</string>
+    <string name="app_ver">v0.1</string>
+    <string name="about_org_des">Một sản phẩm của EX Artisan Systems</string>
+    <string name="about_website">Website: ex-artisan.com</string>
+    <string name="register"><u>Đăng Ký</u></string>
+    <string name="forgot_pass">Quên Mật Khẩu</string>
+    <string name="info_account">THÔNG TIN TÀI KHOẢN</string>
+    <string name="register_account">ĐĂNG KÝ TÀI KHOẢN</string>
+    <string name="p_info_account">THÔNG TIN CÁ NHÂN</string>
+    <string name="bb">(bắt buộc)</string>
+    <string name="gender">Giới Tính:</string>
+    <string name="gender1">- Giới Tính : </string>
+    <string name="class_student">Học sinh lớp:</string>
+    <string name="school">Học sinh trường: </string>
+    <string name="about_app_des"><u>Mô tả về ứng dụng</u></string>
+    <string name="filter"> Bộ lọc hiển thị</string>
+    <string name="filter_subject">Môn học:</string>
+    <string name="filter_class">Lớp:</string>
+    <string name="des_icon_math">icon math</string>
+    <string name="des_title_math">Môn Toán lớp 9</string>
+    <string name="title_sub">Bài giảng tiết 12: Giải Hệ Phương Trình Bậc 2</string>
+    <string name="view">Lượt xem:</string>
+    <string name="view_count">1000</string>
+    <string name="download">Lượt tải:</string>
+    <string name="downloads">1000</string>
+    <string name="comment">Bình luận:</string>
+    <string name="comments">1000</string>
+    <string name="title_activity_home">Mới cập nhật</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="drawer_open">Open the Drawer</string>
+    <string name="drawer_close">Close the Drawer</string>
+    <string name="update_account">CẬP NHẬT THÔNG TIN</string>
+    <string name="search">search</string>
+    
+    <string-array name="TypeDocument">
+        <item>Toán</item>
+         <item>Lý</item>
+        <item>Hóa</item>
+        <item>Văn</item>
+        <item>Sử</item>
+         <item>Địa</item>
+    </string-array>
+    
+    <string-array name="Class">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string name="spinner_title_default">guess@gmail.com</string>
+    <string name="title_activity_download">DownloadActivity</string>
+
+    <string name="name">Tên Tài Khoản : </string>
+    <string name="fullname">- Họ Tên : </string>
+    <string name="birthday">- Ngày Sinh : </string>
+    <string name="email">- Email : </string>
+
+    <string-array name="array_name_class">
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+     <string-array name="array_account">
+        <item>Thông tin tài khoản</item>
+        <item>Cập nhận thông tin tài khoản</item>
+    </string-array>
+    <string name="app_name">eLearning</string>
+
+    <string name="feedback_title">PHẢN HỒI</string>
+
+    <string name="feedback_hint">Nội dung góp ý</string>
+
+    <string name="feedback_send_btn_text">GỬI</string>
+
+    <string name="about_title">GIỚI THIỆU</string>
+
+    <string name="about_ok">OK</string>
+
+    <string name="app_ver">v0.1</string>
+
+    <string name="about_org_des">Một sản phẩm của EX Artisan Systems</string>
+
+    <string name="about_website">Website: ex-artisan.com</string>
+
+    <string name="about_app_des"><u>Mô tả về ứng dụng</u></string>
+
+    <string name="cmt_hint">Nhập comment</string>
+
+    <string name="doc_detail_header_title">Giáo trình tiết 35: Phương trình và hệ phương trình</string>
+
+    <string name="doc_detail_header_des">Nội dung bài giảng
+\n
+\nI.      Tóm tắt lý thuyết phương trình
+\n           -       Phương trình 1 ẩn.
+\n           -       Điều kiện của phương trình.
+\n           -       Phương trình nhiều ẩn: là phương trình có dạng
+\n...</string>
+
+    <string name="doc_detail_view_count">3000</string>
+
+    <string name="doc_detail_view_count_label">" lượt xem"</string>
+
+    <string name="doc_detail_download_count">258</string>
+
+    <string name="doc_detail_downloaf_count_label">" lượt tải"</string>
+
+    <string name="doc_detail_comment_count">24</string>
+
+    <string name="doc_detail_comment_count_label">" bình luận"</string>
+
+    <string name="x">X</string>
+<!-- id facebook -->
+<string name="app_id">669246266442629</string>
+<string name="feedback_email_hint">Email</string>
+<string name="list_doc_fragment_no_data">Chưa có tài liệu phù hợp</string>
+<string name="doc_detail_related_doc">THÊM TÀI LIỆU LIÊN QUAN</string>
+<string name="doc_related_viewed_title">ĐÃ XEM</string>
+<string name="doc_related_title">Data Template, Data Trigger và Template Selector</string>
+<string name="doc_related_activity_title">Tài liệu liên quan</string>
+<string name="post_detail_title">Hỏi đáp</string>
+</resources>

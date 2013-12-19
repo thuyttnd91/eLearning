@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+     >
+
+    <org.holoeverywhere.widget.TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="Title in here"
+        android:textColor="@color/dark_gray"
+        android:textSize="22sp" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tvTitle"
+        android:background="@color/blue" />
+
+    <org.holoeverywhere.widget.TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Title in here"
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tvMessage"
+        android:layout_marginTop="20dp"
+        android:background="#c0c0c0" />
+
+    <LinearLayout
+        android:id="@+id/layoutControl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+
+       <org.holoeverywhere.widget.Button
+            android:id="@+id/btnOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_background"
+            android:gravity="center"
+            android:text="Title in here"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1" />
+
+        
+        <View
+	        android:id="@+id/line3"
+	        android:layout_width="0.5dp"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="5dp"
+	        android:background="#c0c0c0" />
+        
+        <org.holoeverywhere.widget.Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_background"
+            android:gravity="center"
+            android:text="Title in here"
+            android:textColor="@color/dark_gray"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

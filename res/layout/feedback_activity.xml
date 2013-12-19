@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:id="@+id/loClose"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:textSize="27sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:text="@string/feedback_title" />
+    <TextView 
+        android:id="@+id/tvExit"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:clickable="true"
+        android:background="@drawable/purple_background"
+        android:textColor="@android:color/white"
+        android:text="@string/x"
+        android:textSize="30sp"/>
+    </RelativeLayout>
+    <org.holoeverywhere.widget.EditText 
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loClose"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#C0C0C0"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="@string/feedback_email_hint"/>
+    <org.holoeverywhere.widget.EditText 
+        android:id="@+id/edtFeedback"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtEmail"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#C0C0C0"
+        android:textColorHint="#ffffff"
+        android:lines="8"
+        android:hint="@string/feedback_hint"/>
+
+    <Button
+        android:id="@+id/btn_Send_Feedback"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtFeedback"
+        android:onClick="onClick"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/yellow_background"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/feedback_send_btn_text" />
+
+</RelativeLayout>

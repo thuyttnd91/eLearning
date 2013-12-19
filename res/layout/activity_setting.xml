@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#EDC97A"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/purple_background"
+            android:onClick="onClickBack"
+            android:src="@drawable/icon_back" />
+        <TextView 
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="CÀI ĐẶT"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_gray"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Save"
+            android:onClick="onClickSave"
+            />
+    </RelativeLayout>
+	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="20dp"
+            android:text="Chọn lớp học" />
+
+        <org.holoeverywhere.widget.Spinner
+            android:id="@+id/spClass"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            </org.holoeverywhere.widget.Spinner>
+    </LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="10dp"
+	    android:paddingBottom="10dp"
+        android:background="#aecf76"
+	    >
+	     <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn Môn học"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        
+        />
+	     <org.holoeverywhere.widget.CheckBox 
+	         android:id="@+id/cbSubject"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignParentRight="true"
+	         />
+	</RelativeLayout>
+   
+    <ListView 
+        android:id="@+id/lvSubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+
+</LinearLayout>

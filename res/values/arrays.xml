@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="account_setting">
+		<item>Xem thông tin tài khoản</item>
+		<item>Cập nhật thông tin tài khoản</item>
+		<item>Đăng xuất</item>
+	</string-array>
+</resources>

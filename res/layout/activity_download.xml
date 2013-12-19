@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DownloadActivity" >
+
+    <LinearLayout
+        android:id="@+id/layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/purple_background"
+            android:onClick="onClickBack"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="hanlerBack"
+                android:adjustViewBounds="true"
+                android:maxHeight="32dp"
+                android:maxWidth="32dp"
+                android:src="@drawable/ic_back" />
+        </LinearLayout>
+
+        <org.holoeverywhere.widget.TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/light_orange"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="DANH SÁCH TẢI"
+            android:textColor="@color/dark_gray" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDownload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_bar"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

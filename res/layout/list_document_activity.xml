@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" 
+    android:paddingBottom="10dp">
+
+    <org.holoeverywhere.widget.ImageButton
+        android:id="@+id/imgFilter_ve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/ic_filter"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="right"
+        android:visibility="gone"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/filter_subject" />
+
+        <org.holoeverywhere.widget.Spinner
+            android:id="@+id/spi_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/TypeDocument" />
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:text="@string/filter_class" />
+
+        <org.holoeverywhere.widget.Spinner
+            android:id="@+id/spi_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/Class" />
+
+        <org.holoeverywhere.widget.ImageButton
+            android:id="@+id/imgFilter_ho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_filter_ho"
+            
+            android:padding="10dp" />
+    </LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <org.holoeverywhere.widget.ListView
+        android:id="@+id/lv_subjects"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp" >
+    </org.holoeverywhere.widget.ListView>
+    
+    <RelativeLayout 
+        android:id="@+id/layout_Retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:background="@color/transparent">
+        <org.holoeverywhere.widget.TextView 
+            android:id="@+id/tvNoData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_doc_fragment_no_data"
+            android:visibility="gone"/>
+    
+    <org.holoeverywhere.widget.ProgressBar
+        android:id="@+id/pro_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    <org.holoeverywhere.widget.Button 
+        android:id="@+id/btnRetryData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Thử lại"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

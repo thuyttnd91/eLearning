@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/toast_frame"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_white_background"
+                android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp">
+                <ImageView 
+                    android:id="@+id/imgViewAvatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"/>
+                <RelativeLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imgViewAvatar"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="2dp">
+                    <org.holoeverywhere.widget.TextView 
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:text="anhnvt"
+                        android:textStyle="bold"/>
+                    <org.holoeverywhere.widget.TextView 
+                        android:id="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvUserName"
+                        android:layout_marginTop="5dp"
+                        android:text="Mắt người ví như một camera quan sát, vậy có nghĩa chúng ta được trang bị hai camera và sẽ nhìn thành hai hình ảnh khác nhau. Tôi không hiểu cơ chế nào để con người không nhìn một thành hai? Xin cảm ơn. "
+                        android:maxLines="3"
+                        android:ellipsize="end"/>
+                    <org.holoeverywhere.widget.TextView 
+                        android:id="@+id/tvPostTime"
+                        android:layout_below="@+id/tvContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="7/11/2013"
+                        android:textColor="#C0C0C0"/>
+
+</RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

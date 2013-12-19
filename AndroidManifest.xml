@@ -1,0 +1,109 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eas.elearning"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="eLearning"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Holo.Theme.Light" >
+        <activity android:name=".app.FeedbackActivity" android:theme="@style/Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".app.AboutActivity" android:theme="@style/Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name=".app.DocDetailActivity" 
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Holo.Theme.Light.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.eas.elearning.app.HomeActivity"
+            android:label="@string/title_activity_home" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.eas.elearning.app.LoginAccountPopup" 
+            android:theme="@style/Dialog"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".app.RegisterAccountActivity"
+            android:theme="@style/Holo.Theme.Light.NoActionBar"
+            android:screenOrientation="portrait">
+            
+        </activity>
+        <activity android:name=".app.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".app.ViewAccountActivity"
+            android:theme="@style/Holo.Theme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".app.UpdateInfoActivity"
+            android:theme="@style/Holo.Theme.Light.NoActionBar"
+            android:screenOrientation="portrait">
+            
+        </activity>
+    <activity android:name="com.eas.elearning.app.FullScreenSlideActivity"
+       
+         android:theme="@style/Holo.Theme.NoActionBar.Fullscreen" android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.eas.elearning.app.DownloadActivity"
+            android:label="@string/title_activity_download" 
+            android:screenOrientation="portrait">
+        </activity>
+         <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <activity android:name=".app.SettingActivity"
+              android:theme="@style/Holo.Theme.Light.NoActionBar"
+            >
+        </activity>
+        
+        <activity 
+            android:name=".app.DocRelatedActivity" 
+            android:theme="@style/Holo.Theme.Light.NoActionBar"
+            android:label="@string/doc_related_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name=".app.PostDetailActivity" 
+            android:theme="@style/Holo.Theme.Light.NoActionBar"
+            android:label="@string/post_detail_title"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name=".app.NewPostActivity" 
+            android:theme="@style/Dialog"
+            android:label="@string/post_detail_title"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity 
+            android:name=".app.VideoDetailActivity" 
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/Holo.Theme.Light.NoActionBar" android:screenOrientation="sensor">
+        </activity>
+        
+    </application>
+
+</manifest>

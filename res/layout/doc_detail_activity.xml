@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5" >
+
+    <RelativeLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/loSlide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp" >
+
+            <org.holoeverywhere.widget.ViewPager
+                android:id="@+id/viewPagerSlide"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+            </org.holoeverywhere.widget.ViewPager>
+
+            <org.holoeverywhere.widget.ProgressBar
+                android:id="@+id/prBarSlide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnRetrySlide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_refresh"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loSlide"
+            android:gravity="center_vertical"
+            android:padding="7dp" >
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnDownload"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_download" />
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnFavorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@+id/btnDownload"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_favorite"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"/>
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnComment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/btnFavorite"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_comment" />
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnShare"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignTop="@+id/btnDownload"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btnComment"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="ShareDocument"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_share" />
+
+            <org.holoeverywhere.widget.ImageButton
+                android:id="@+id/btnFullScr"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/blue_background"
+                android:onClick="onClick"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_fullscreen" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <org.holoeverywhere.widget.ListView
+        android:id="@+id/listViewContain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutInput"
+        android:layout_below="@+id/layoutContent"
+        android:divider="@color/transparent"
+        android:dividerHeight="1dp"
+        android:headerDividersEnabled="false" >
+    </org.holoeverywhere.widget.ListView>
+    
+       <RelativeLayout
+            android:id="@+id/layoutInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:paddingBottom="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/layout_send"
+                android:orientation="horizontal" >
+
+                <org.holoeverywhere.widget.EditText
+                    android:id="@+id/edtComment"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="Nhập comment" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@id/layout_send"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageButton
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/blue_background"
+                    android:src="@drawable/ic_send" 
+                    android:onClick="onClick"/>
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBarSend"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone" />
+            <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="#33b5e5" />
+        </RelativeLayout>
+
+</RelativeLayout>
